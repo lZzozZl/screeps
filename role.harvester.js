@@ -17,8 +17,8 @@ module.exports = {
         }
 
         if (creep.memory.working === true) {
-            if (creep.transfer(Game.spawns.startPoint, RESOURCE_ENERGY) === ERR_NOT_IN_RANGE) {
-                creep.moveTo(Game.spawns.startPoint);
+            if (creep.transfer(Game.spawns.mainSpawn, RESOURCE_ENERGY) === ERR_NOT_IN_RANGE) {
+                creep.moveTo(Game.spawns.mainSpawn);
             }
         }
         else {

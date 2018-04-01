@@ -28,11 +28,11 @@ module.exports.loop = function () {
     console.log(numberOfHarvesters);
 
     if (numberOfHarvesters < minimumNumberOfHarvesters){
-        name = Game.spawns.startPoint.createCreep([WORK,WORK,CARRY,MOVE], undefined,
+        name = Game.spawns.mainSpawn.createCreep([WORK,WORK,CARRY,MOVE], undefined,
             { role: 'harvester', working: false});
     }
     else {
-        name = Game.spawns.startPoint.createCreep([WORK,CARRY,MOVE,MOVE], undefined,
+        name = Game.spawns.mainSpawn.createCreep([WORK,CARRY,MOVE,MOVE], undefined,
             { role: 'upgrader', working: false});
     }
 
